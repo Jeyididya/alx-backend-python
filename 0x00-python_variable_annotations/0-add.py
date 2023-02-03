@@ -1,7 +1,7 @@
-#!/usr/bin/python3
-
-def add(a : float, b : float) -> float:
-	"""Returns float summation of a and b"""
-	return a + b
+#!/usr/bin/env python3
+"""Module that contains a single function that adds two integers."""
 
 
+def add(a: float, b: float) -> float:
+    """ Add two integers together."""
+    return a + b
