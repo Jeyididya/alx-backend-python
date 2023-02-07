@@ -2,16 +2,16 @@
 """Contains a method that spawns wait_random n times with a
 specified delay between each call."""
 import asyncio
-from typing import List
+from time import perf_counter
 
-wait_random = __import__('1-concurrent_coroutines').wait_random
+wait_n = __import__('1-concurrent_coroutines').wait_n
 
 
 def measure_time(n: int, max_delay: int) -> float:
     """Measure the total execution time of a function
     Args:
         n: the number of coroutines to launch
-        max_delay: the maximum amount of time to wait for each coroutine
+        max_delay: the maximum amount of time for coroutine
     Returns: elapsed time in seconds
     """
     start = perf_counter()
