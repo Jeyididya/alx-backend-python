@@ -11,7 +11,7 @@ async def measure_runtime() -> float:
     Arguments:
         None
     Returns:
-        the total exection time 
+        the total exection time
     """
     t_start = time.perf_counter()
     task = [async_comprehension() for i in range(4)]
